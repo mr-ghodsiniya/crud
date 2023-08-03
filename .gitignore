@@ -1,1 +1,6 @@
+self
+
+__pycache__
 venv
+server_time_log.log
+sql_app.db
