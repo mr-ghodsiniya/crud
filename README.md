@@ -4,7 +4,7 @@
 
 1. **clone the project**  
    ```  
-   git clone 
+   git clone git@github.com:mr-ghodsiniya/to-do-list.git
    ```
 
 2. **create a python virtual environment**  
