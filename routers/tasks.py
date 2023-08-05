@@ -33,7 +33,7 @@ def read_task(task_id:int, db: Session = Depends(get_db)):
     return task
 
 
-@router.patch("/tasks/{task_id}", response_class=tasks_s.TaskInfo)
+@router.patch("/tasks/{task_id}", response_model=tasks_s.TaskInfo)
 def update_task(task_id: int, n_task:tasks_s.TaskUpdate, db: Session = Depends(get_db)):
     task = db.query(tasks_m.Task).filter(tasks_m.Task.id == task_id).first()
     if task is None:
