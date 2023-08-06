@@ -38,8 +38,14 @@ def update_task(task_id: int, n_task:tasks_s.TaskUpdate, db: Session = Depends(g
     task = db.query(tasks_m.Task).filter(tasks_m.Task.id == task_id).first()
     if task is None:
         raise HTTPException(status_code=404, detail="Task not found")
-    task.title = n_task.title
-    task.description = n_task.description
+    if n_task.title is None:
+        task.title = task.title
+    else:
+        task.title = n_task.title
+    if n_task.description is None:
+        task.description = task.description
+    else:
+        task.description = n_task.description
     db.commit()
     db.refresh(task)
     return task
