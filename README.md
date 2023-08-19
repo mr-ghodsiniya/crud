@@ -1,10 +1,10 @@
-# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=550&size=30&duration=3500&color=ADBAC7&center=false&vCenter=true&repeat=true&width=700&lines=simple+To+Do+List+project+with+FastAPI)](https://git.io/typing-svg)
+# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=550&size=30&duration=3500&color=ADBAC7&center=false&vCenter=true&repeat=true&width=700&lines=Simple+CRUD+with+FastAPI)](https://git.io/typing-svg)
 
 # ⏳️ Installation
 
 1. **clone the project**  
    ```  
-   git clone git@github.com:mr-ghodsiniya/to-do-list.git
+   git@github.com:mr-ghodsiniya/crud.git
    ```
 
 2. **create a python virtual environment**  
